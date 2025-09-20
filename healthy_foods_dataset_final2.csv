@@ -1,0 +1,62 @@
+Food Item,Price (₹/kg),Protein (g),Fiber (g),Calories,Category,Half Price (₹/kg)
+Cucumber,40,0.7,0.5,16,Vegetable,20.0
+Cauliflower,70,1.9,2.0,25,Vegetable,35.0
+Bell Pepper,100,1.0,2.1,31,Vegetable,50.0
+Apple,120,0.3,2.4,52,Fruit,60.0
+Banana,60,1.3,2.6,89,Fruit,30.0
+Pomegranate,180,1.7,4.0,83,Fruit,90.0
+Milk,60,3.4,0.0,42,Dairy,30.0
+Cheese,500,25.0,0.0,402,Dairy,250.0
+Paneer,400,18.0,0.0,296,Dairy,200.0
+Green Peas,90,5.5,4.1,89,Vegetable,45.0
+Papaya,71,0.5,1.8,37,Fruit,35.5
+Orange,84,0.9,2.4,58,Fruit,42.0
+Kidney Beans,130,8.0,6.4,161,Legumes,65.0
+Strawberry,247,0.8,1.9,33,Fruit,123.5
+Onion,45,1.0,1.7,39,Vegetable,22.5
+Fish (Salmon),830,22.5,0.0,217,Other,415.0
+Tomato,35,0.9,1.2,19,Vegetable,17.5
+Black Beans,158,9.1,9.1,125,Legumes,79.0
+Soybeans,180,38.2,8.5,390,Legumes,90.0
+Chickpeas,135,18.8,16.3,313,Legumes,67.5
+Guava,75,2.5,5.2,78,Fruit,37.5
+Yogurt,85,10.4,0.0,54,Dairy,42.5
+Lentils,137,8.8,7.2,103,Legumes,68.5
+Mango,77,0.9,1.6,61,Fruit,38.5
+Almonds,818,19.7,11.6,514,Nuts,409.0
+Blueberry,345,0.7,2.2,52,Fruit,172.5
+Chia Seeds,600,17.0,34.0,486,Seeds,300.0
+Salmon,1200,20.0,0.0,208,Animal Protein,600.0
+Kale,90,3.0,4.0,35,Vegetable,45.0
+Honey,400,0.3,0.2,304,Sweeteners,200.0
+Beef,350,26.0,0.0,250,Meat,175.0
+Turkey,300,29.0,0.0,189,Meat,150.0
+Tuna,900,23.0,0.0,132,Fish,450.0
+Sweet Corn,80,3.4,2.5,86,Vegetable,40.0
+Greek Yogurt,200,10.0,0.0,59,Dairy,100.0
+Cottage Cheese,300,11.0,0.0,98,Dairy,150.0
+Almond Butter,600,21.0,12.0,614,Nuts,300.0
+Pumpkin Seeds,450,19.0,18.0,559,Seeds,225.0
+Flax Seeds,500,18.0,27.0,534,Seeds,250.0
+Sunflower Seeds,400,21.0,11.0,584,Seeds,200.0
+Hazelnuts,850,15.0,10.0,628,Nuts,425.0
+Walnuts,750,15.0,7.0,654,Nuts,375.0
+Cashews,700,18.0,3.0,553,Nuts,350.0
+Pistachios,900,20.0,10.0,562,Nuts,450.0
+Mixed Nuts,400,20.0,10.0,600,Nuts,200.0
+Brown Rice,80,2.6,1.8,111,Grains,40.0
+Oats,150,2.4,2.5,168,Grains,75.0
+Barley,100,2.3,3.8,123,Grains,50.0
+Quinoa,350,14.0,7.0,368,Grains,175.0
+Eggs,120,13.0,0.0,155,Animal Protein,60.0
+Chicken Breast,250,31.0,0.0,165,Animal Protein,125.0
+Tofu,180,15.0,3.0,76,Plant Protein,90.0
+Tempeh,200,19.0,6.0,193,Plant Protein,100.0
+Mushrooms,70,3.0,1.0,22,Vegetable,35.0
+Avocado,200,2.0,6.0,160,Fruit,100.0
+Apples,120,0.3,2.4,52,Fruit,60.0
+Green Beans,60,2.0,4.0,35,Vegetable,30.0
+Broccoli,80,2.8,2.6,34,Vegetable,40.0
+Carrot,45,0.9,2.8,41,Vegetable,22.5
+Spinach,50,2.9,2.2,23,Vegetable,25.0
+Sweet Potato,60,1.6,3.0,86,Vegetable,30.0
