@@ -6,7 +6,9 @@ df = pd.read_csv('healthy_foods_dataset_final2.csv')
 
 def recommend_foods_varied(budget, categories, use_half_price=True, top_n=3):
     filtered = df[df['Category'].isin(categories)].copy()
-    price_column = 'Price_HalfKG (₹/kg)' if use_half_price else 'Price_KG (₹/kg)'
+    price_column = 'Price_KG (₹/kg)'
+    quantity = 0.5 if use_half_price else 1.0  # quantity in kg
+
     filtered['nutrient_score'] = (filtered['Protein (g)'] + filtered['Fiber (g)']) / filtered[price_column]
     filtered = filtered.sort_values(by='nutrient_score', ascending=False)
 
@@ -20,18 +22,20 @@ def recommend_foods_varied(budget, categories, use_half_price=True, top_n=3):
         total_fiber = 0
 
         for idx, row in remaining.iterrows():
-            if total_cost + row[price_column] <= budget:
+            cost = row[price_column] * quantity
+            if total_cost + cost <= budget:
                 selected_rows.append(row)
-                total_cost += row[price_column]
-                total_protein += row['Protein (g)']
-                total_fiber += row['Fiber (g)']
+                total_cost += cost
+                total_protein += row['Protein (g)'] * quantity
+                total_fiber += row['Fiber (g)'] * quantity
 
         recommended_df = pd.DataFrame(selected_rows)
         recommendations.append({
             'dataframe': recommended_df,
             'total_cost': total_cost,
             'total_protein': total_protein,
-            'total_fiber': total_fiber
+            'total_fiber': total_fiber,
+            'quantity': quantity
         })
 
         selected_items = recommended_df['Food Item'].tolist()
@@ -43,15 +47,17 @@ def recommend_foods_varied(budget, categories, use_half_price=True, top_n=3):
     return recommendations
 
 # Streamlit UI
+
 st.title('Healthy Food Recommendation Based on Budget')
+
 st.markdown("""
-Welcome! This app helps you select the best healthy foods within your budget. 
-Select food categories and budget to see multiple nutritious and affordable sets tailored for you.
+Welcome! This application helps you find sets of nutritious, healthy foods tailored to your budget and category preferences. 
+Select your budget and categories below, and get multiple optimized food sets.
 """)
 
 budget = st.number_input('Enter your budget (₹)', min_value=1, value=500)
 categories = st.multiselect('Select Food Categories', options=df['Category'].unique())
-use_half_price = st.checkbox('Use Half Price for calculations', value=True)
+use_half_price = st.checkbox('Calculate using half kilogram portions', value=True)
 
 if st.button('Get Recommendations'):
     if not categories:
@@ -59,7 +65,7 @@ if st.button('Get Recommendations'):
     else:
         recs = recommend_foods_varied(budget, categories, use_half_price)
         for i, rec in enumerate(recs, 1):
-            st.subheader(f'Set {i}')
+            st.subheader(f'Set {i} (Each item approx. {rec["quantity"]} kg)')
             if not rec['dataframe'].empty:
                 col1, col2, col3 = st.columns(3)
                 col1.metric("Total Cost (₹)", f"{rec['total_cost']:.2f}")
@@ -67,7 +73,7 @@ if st.button('Get Recommendations'):
                 col3.metric("Total Fiber (g)", f"{rec['total_fiber']:.2f}")
 
                 st.dataframe(rec['dataframe'][['Food Item', 'Category', 'Price_KG (₹/kg)', 'Protein (g)', 'Fiber (g)', 'Calories']].style.format({
-                    'Price_KG (₹/kg)': '₹{:.2f}',
+                    'Price_KG (₹/kg)': '₹{:.2f} per kg',
                     'Protein (g)': '{:.2f}',
                     'Fiber (g)': '{:.2f}',
                     'Calories': '{:.0f}'
