@@ -1,0 +1,201 @@
+Food Item,Price (₹/kg),Protein (g),Fiber (g),Calories,Category
+Cucumber,40,0.7,0.5,16,Vegetable
+Sweet Potato,60,1.6,3.0,86,Vegetable
+Spinach,50,2.9,2.2,23,Vegetable
+Broccoli,80,2.8,2.6,34,Vegetable
+Carrot,45,0.9,2.8,41,Vegetable
+Tomato,35,0.9,1.2,18,Vegetable
+Cauliflower,70,1.9,2.0,25,Vegetable
+Kale,90,2.9,2.6,35,Vegetable
+Bell Pepper,100,1.0,2.1,31,Vegetable
+Onion,40,1.1,1.7,40,Vegetable
+Apple,120,0.3,2.4,52,Fruit
+Avocado,200,2.0,6.7,160,Fruit
+Banana,60,1.3,2.6,89,Fruit
+Orange,80,0.9,2.4,47,Fruit
+Mango,100,0.8,1.6,60,Fruit
+Papaya,70,0.5,1.7,43,Fruit
+Guava,90,2.6,5.4,68,Fruit
+Strawberry,250,0.8,2.0,32,Fruit
+Blueberry,300,0.7,2.4,57,Fruit
+Pomegranate,180,1.7,4.0,83,Fruit
+Brown Rice,80,2.6,1.8,111,Grains
+Quinoa,300,4.1,2.8,120,Grains
+Oats,150,2.4,2.5,68,Grains
+Barley,100,2.3,3.8,123,Grains
+Chickpeas,120,19.0,17.0,364,Legumes
+Lentils,130,9.0,8.0,116,Legumes
+Kidney Beans,140,8.7,6.4,127,Legumes
+Black Beans,140,8.9,8.7,132,Legumes
+Soybeans,200,36.0,9.3,446,Legumes
+Green Peas,90,5.0,4.0,81,Vegetable
+Almonds,800,21.0,12.5,579,Nuts
+Walnuts,750,15.0,7.0,654,Nuts
+Cashews,700,18.0,3.3,553,Nuts
+Chia Seeds,600,17.0,34.0,486,Seeds
+Flax Seeds,500,18.0,27.0,534,Seeds
+Pumpkin Seeds,450,19.0,18.0,559,Seeds
+Sunflower Seeds,400,21.0,11.0,584,Seeds
+Hazelnuts,850,15.0,10.0,628,Nuts
+Pistachios,900,20.0,10.0,562,Nuts
+Mixed Nuts,400,20.0,10.0,600,Nuts
+Milk,60,3.4,0.0,42,Dairy
+Yogurt,100,10.0,0.0,59,Dairy
+Cheese,500,25.0,0.0,402,Dairy
+Paneer,400,18.0,0.0,296,Dairy
+Eggs,120,13.0,0.0,155,Animal Protein
+Chicken Breast,250,31.0,0.0,165,Animal Protein
+Fish (Salmon),800,20.0,0.0,208,Other
+Tofu,200,8.0,0.0,76,Other
+Mushrooms,100,3.1,1.0,22,Other
+Cottage Cheese,350,11.0,0.0,98,Other
+Blueberry,351,0.7,2.5,50,Fruit
+Tomato,38,1.0,1.1,16,Vegetable
+Kidney Beans,114,9.1,6.6,145,Legumes
+Spinach,59,2.9,2.1,24,Vegetable
+Pistachios,877,19.9,9.9,562,Nuts
+Sunflower Seeds,352,22.9,10.7,541,Seeds
+Avocado,219,2.0,7.1,172,Fruit
+Yogurt,83,9.3,0.0,59,Dairy
+Spinach,42,2.8,2.1,24,Vegetable
+Tomato,32,1.0,1.2,18,Vegetable
+Flax Seeds,583,18.5,25.0,484,Seeds
+Mushrooms,104,3.2,1.1,21,Other
+Oats,167,2.3,2.3,76,Grains
+Mixed Nuts,395,21.1,9.0,613,Nuts
+Chicken Breast,299,30.4,0.0,154,Animal Protein
+Fish (Salmon),821,19.9,0.0,214,Other
+Tomato,26,1.0,1.2,19,Vegetable
+Tomato,41,0.8,1.3,17,Vegetable
+Kidney Beans,131,9.4,6.0,158,Legumes
+Chicken Breast,270,32.5,0.0,166,Animal Protein
+Spinach,51,2.9,2.3,21,Vegetable
+Almonds,669,19.6,11.8,524,Nuts
+Quinoa,358,4.0,2.7,103,Grains
+Walnuts,602,15.9,6.3,569,Nuts
+Pistachios,822,19.9,10.9,511,Nuts
+Mixed Nuts,425,19.4,9.0,569,Nuts
+Pistachios,740,20.0,10.1,604,Nuts
+Flax Seeds,521,19.4,25.3,593,Seeds
+Walnuts,839,13.7,6.4,664,Nuts
+Broccoli,93,3.1,2.5,29,Vegetable
+Oats,146,2.2,2.6,69,Grains
+Kale,99,3.0,2.8,39,Vegetable
+Chia Seeds,569,16.8,34.8,548,Seeds
+Black Beans,126,8.2,9.5,131,Legumes
+Papaya,57,0.5,1.8,39,Fruit
+Chia Seeds,607,18.1,31.5,606,Seeds
+Sunflower Seeds,308,20.9,11.0,469,Seeds
+Spinach,39,2.6,2.0,23,Vegetable
+Tomato,30,1.0,1.2,18,Vegetable
+Broccoli,75,3.0,2.8,34,Vegetable
+Mixed Nuts,475,17.5,8.5,567,Nuts
+Oats,137,2.1,2.9,67,Grains
+Green Peas,96,5.1,4.3,74,Vegetable
+Carrot,43,0.8,3.0,39,Vegetable
+Yogurt,99,9.4,0.0,51,Dairy
+Broccoli,75,3.4,2.7,25,Vegetable
+Avocado,200,1.9,7.4,159,Fruit
+Quinoa,322,3.9,2.6,123,Grains
+Sunflower Seeds,309,22.5,11.0,428,Seeds
+Guava,72,2.5,5.7,66,Fruit
+Pistachios,866,19.6,10.7,512,Nuts
+Mango,99,0.8,1.5,66,Fruit
+Lentils,131,9.1,7.9,115,Legumes
+Chicken Breast,246,31.6,0.0,141,Animal Protein
+Mango,94,0.8,1.5,58,Fruit
+Oats,156,2.1,2.8,74,Grains
+Mango,113,0.7,1.6,70,Fruit
+Blueberry,396,0.7,2.6,56,Fruit
+Sweet Potato,58,1.8,2.9,90,Vegetable
+Yogurt,99,9.5,0.0,55,Dairy
+Black Beans,138,7.4,10.1,130,Legumes
+Cashews,790,17.9,3.6,506,Nuts
+Tofu,161,8.5,0.0,71,Other
+Green Peas,90,5.5,4.1,89,Vegetable
+Papaya,58,0.5,1.6,40,Fruit
+Orange,77,1.0,2.4,51,Fruit
+Chicken Breast,235,31.7,0.0,159,Animal Protein
+Spinach,64,2.9,1.9,21,Vegetable
+Avocado,191,2.1,7.5,177,Fruit
+Hazelnuts,905,16.4,9.5,685,Nuts
+Flax Seeds,439,18.3,24.5,535,Seeds
+Eggs,133,13.7,0.0,145,Animal Protein
+Tomato,26,0.9,1.3,16,Vegetable
+Papaya,71,0.5,1.8,37,Fruit
+Flax Seeds,506,18.1,23.1,497,Seeds
+Mushrooms,109,3.3,0.9,20,Other
+Sweet Potato,58,1.8,2.8,84,Vegetable
+Lentils,141,9.9,8.0,110,Legumes
+Chicken Breast,289,30.4,0.0,187,Animal Protein
+Orange,84,1.1,2.4,56,Fruit
+Blueberry,326,0.7,2.4,59,Fruit
+Eggs,124,13.3,0.0,145,Animal Protein
+Oats,126,2.3,2.8,74,Grains
+Sunflower Seeds,305,23.2,10.1,619,Seeds
+Mixed Nuts,412,17.1,8.3,628,Nuts
+Chicken Breast,250,33.9,0.0,171,Animal Protein
+Tomato,33,0.8,1.2,16,Vegetable
+Flax Seeds,542,18.6,23.3,562,Seeds
+Mixed Nuts,415,21.8,9.2,687,Nuts
+Avocado,244,2.0,7.1,156,Fruit
+Avocado,189,2.2,7.3,186,Fruit
+Pistachios,886,21.6,10.5,485,Nuts
+Flax Seeds,451,18.1,21.3,529,Seeds
+Kidney Beans,119,8.2,6.8,143,Legumes
+Orange,71,1.0,2.4,50,Fruit
+Soybeans,200,38.4,9.5,450,Legumes
+Orange,84,0.9,2.4,58,Fruit
+Chicken Breast,203,30.7,0.0,126,Animal Protein
+Fish (Salmon),901,20.8,0.0,225,Other
+Chicken Breast,232,30.9,0.0,178,Animal Protein
+Chicken Breast,265,32.1,0.0,147,Animal Protein
+Chicken Breast,230,33.8,0.0,165,Animal Protein
+Pistachios,989,19.4,9.5,634,Nuts
+Blueberry,271,0.8,2.2,55,Fruit
+Kidney Beans,130,8.0,6.4,161,Legumes
+Spinach,44,2.6,2.2,27,Vegetable
+Chicken Breast,283,30.3,0.0,168,Animal Protein
+Cashews,675,16.1,3.9,455,Nuts
+Broccoli,110,2.9,2.4,27,Vegetable
+Mango,118,0.7,1.5,77,Fruit
+Sunflower Seeds,375,21.8,11.8,662,Seeds
+Kale,91,3.0,2.8,33,Vegetable
+Strawberry,211,0.8,2.0,29,Fruit
+Strawberry,247,0.8,1.9,33,Fruit
+Pistachios,711,20.1,11.0,586,Nuts
+Oats,134,2.4,2.4,79,Grains
+Chicken Breast,253,29.1,0.0,193,Animal Protein
+Onion,45,1.0,1.7,39,Vegetable
+Fish (Salmon),830,22.5,0.0,217,Other
+Flax Seeds,478,20.0,24.5,570,Seeds
+Brown Rice,71,2.8,1.7,112,Grains
+Tomato,35,0.9,1.2,19,Vegetable
+Hazelnuts,931,17.0,9.9,757,Nuts
+Black Beans,158,9.1,9.1,125,Legumes
+Brown Rice,63,2.9,1.6,125,Grains
+Guava,85,2.4,5.3,71,Fruit
+Soybeans,180,38.2,8.5,390,Legumes
+Chickpeas,135,18.8,16.3,313,Legumes
+Brown Rice,61,2.6,1.6,114,Grains
+Guava,75,2.5,5.2,78,Fruit
+Chicken Breast,286,33.5,0.0,187,Animal Protein
+Tofu,152,8.4,0.0,66,Other
+Sunflower Seeds,381,21.2,10.7,619,Seeds
+Flax Seeds,563,17.0,23.1,461,Seeds
+Hazelnuts,918,17.8,10.4,626,Nuts
+Yogurt,85,10.4,0.0,54,Dairy
+Pistachios,869,19.9,9.2,597,Nuts
+Chicken Breast,276,30.0,0.0,151,Animal Protein
+Blueberry,421,0.6,2.7,49,Fruit
+Lentils,137,8.8,7.2,103,Legumes
+Mixed Nuts,396,15.9,8.1,586,Nuts
+Mango,77,0.9,1.6,61,Fruit
+Brown Rice,83,2.9,2.0,115,Grains
+Mixed Nuts,364,19.0,8.2,523,Nuts
+Almonds,788,22.2,11.7,655,Nuts
+Blueberry,299,0.7,2.4,48,Fruit
+Flax Seeds,519,17.4,26.2,475,Seeds
+Pistachios,907,21.0,9.8,435,Nuts
+Almonds,818,19.7,11.6,514,Nuts
+Blueberry,345,0.7,2.2,52,Fruit
