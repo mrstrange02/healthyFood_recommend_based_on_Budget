@@ -1,12 +1,12 @@
 import pandas as pd
 import streamlit as st
 
-# Load updated dataset
+# Load updated dataset with correct column names
 df = pd.read_csv('healthy_foods_dataset_final2.csv')
 
 def recommend_foods_varied(budget, categories, use_half_price=True, top_n=3):
     filtered = df[df['Category'].isin(categories)].copy()
-    price_column = 'Half Price (₹/kg)' if use_half_price else 'Price (₹/kg)'
+    price_column = 'Price_HalfKG (₹/kg)' if use_half_price else 'Price_KG (₹/kg)'
     filtered['nutrient_score'] = (filtered['Protein (g)'] + filtered['Fiber (g)']) / filtered[price_column]
     filtered = filtered.sort_values(by='nutrient_score', ascending=False)
 
@@ -45,8 +45,8 @@ def recommend_foods_varied(budget, categories, use_half_price=True, top_n=3):
 # Streamlit UI
 st.title('Healthy Food Recommendation Based on Budget')
 st.markdown("""
-Welcome! This app helps you choose the best healthy foods within your given budget. 
-Select your preferred food categories and enter your budget to see multiple nutritious sets tailored for you.
+Welcome! This app helps you select the best healthy foods within your budget. 
+Select food categories and budget to see multiple nutritious and affordable sets tailored for you.
 """)
 
 budget = st.number_input('Enter your budget (₹)', min_value=1, value=500)
@@ -61,15 +61,13 @@ if st.button('Get Recommendations'):
         for i, rec in enumerate(recs, 1):
             st.subheader(f'Set {i}')
             if not rec['dataframe'].empty:
-                # Display summary with metric widgets
                 col1, col2, col3 = st.columns(3)
                 col1.metric("Total Cost (₹)", f"{rec['total_cost']:.2f}")
                 col2.metric("Total Protein (g)", f"{rec['total_protein']:.2f}")
                 col3.metric("Total Fiber (g)", f"{rec['total_fiber']:.2f}")
 
-                # Show recommended foods in a table
-                st.dataframe(rec['dataframe'][['Food Item', 'Category', 'Price (₹/kg)', 'Protein (g)', 'Fiber (g)', 'Calories']].style.format({
-                    'Price (₹/kg)': '₹{:.2f}',
+                st.dataframe(rec['dataframe'][['Food Item', 'Category', 'Price_KG (₹/kg)', 'Protein (g)', 'Fiber (g)', 'Calories']].style.format({
+                    'Price_KG (₹/kg)': '₹{:.2f}',
                     'Protein (g)': '{:.2f}',
                     'Fiber (g)': '{:.2f}',
                     'Calories': '{:.0f}'
