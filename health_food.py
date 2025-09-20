@@ -2,7 +2,7 @@ import pandas as pd
 import streamlit as st
 
 # Load updated dataset
-df = pd.read_csv('healthy_foods_dataset_final_updated.csv')
+df = pd.read_csv('healthy_foods_dataset_final2.csv')
 
 def recommend_foods_varied(budget, categories, use_half_price=True, top_n=3):
     filtered = df[df['Category'].isin(categories)].copy()
