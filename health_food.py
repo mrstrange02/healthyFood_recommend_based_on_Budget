@@ -50,7 +50,7 @@ def recommend_foods_halfkg(budget, categories, top_n=3):
 st.title('Healthy Food Recommendation Based on Budget')
 
 st.markdown("""
-Welcome! This app helps you find healthy food sets within your budget using half-kilogram pricing.
+hey guys! This app helps you find healthy food sets within your budget using half-kilogram pricing.
 Select your preferred food categories and budget to see optimized nutritious sets.
 """)
 
