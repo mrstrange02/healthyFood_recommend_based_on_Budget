@@ -4,11 +4,9 @@ import streamlit as st
 # Load dataset
 df = pd.read_csv('healthy_foods_dataset_final2.csv')
 
-def recommend_foods_halfkg(budget, categories, top_n=3):
+def recommend_foods_halfkg_always_3sets(budget, categories, top_n=3):
     filtered = df[df['Category'].isin(categories)].copy()
     price_column = 'Price_HalfKG (₹/kg)'
-
-    # Use nutrient score based on half-kg price
     filtered['nutrient_score'] = (filtered['Protein (g)'] + filtered['Fiber (g)']) / filtered[price_column]
     filtered = filtered.sort_values(by='nutrient_score', ascending=False)
 
@@ -40,8 +38,9 @@ def recommend_foods_halfkg(budget, categories, top_n=3):
         selected_items = recommended_df['Food Item'].tolist()
         remaining = remaining[~remaining['Food Item'].isin(selected_items)]
 
+        # If no items left, reset remaining to full filtered to allow repeats
         if remaining.empty:
-            break
+            remaining = filtered.copy()
 
     return recommendations
 
@@ -61,7 +60,7 @@ if st.button('Get Recommendations'):
     if not categories:
         st.warning('Please select at least one food category.')
     else:
-        recs = recommend_foods_halfkg(budget, categories)
+        recs = recommend_foods_halfkg_always_3sets(budget, categories)
         for i, rec in enumerate(recs, 1):
             st.subheader(f'Set {i} (Approx 0.5 kg per item)')
             if not rec['dataframe'].empty:
